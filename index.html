@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assighment_05</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style/custom.css">
+</head>
+
+<body class="mx-2 lg:mx-3">
+    <!-- navbar start -->
+    <nav>
+        <div class=" navbar bg-slate-100 rounded mt-2 lg:px-8">
+            <div class="flex-1">
+                <h2 class="font-semibold"><span class="text-xl align-start">Welcome</span>
+                    <br>
+                    to our website
+                </h2>
+            </div>
+            <div class="flex-none gap-2">
+                <div class="form-control">
+                    <a href="./blog.html" target="_blank" class="btn btn-accent">BLOG</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <main class="grid grid-row lg:flex">
+        <section class=" w-[100%] lg:w-[75%]">
+            <!-- card start ----------------------------------->
+            <main class="lg:my-10 my-4 grid grid-rows md:grid-cols-2 lg:grid-cols-3 gap-3">
+                <div id="random-card" class="card w-[full]  bg-stone-400 shadow-xl m-4 lg:m-0">
+                    <div class="px-10 pt-10 h-[96%]">
+                        <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 id="title-triangle" class="card-title">Triangle</h2>
+                        <p>Area (A) = 0.5 x b x h</p>
+                        <div class="flex my-3 gap-x-2">
+                            <div>
+                                <input type="text" placeholder="b" id="input-a-triangle"
+                                    class="input input-bordered input-success w-[50%] max-w-xs" />
+                                <span>cm</span>
+
+                            </div>
+                            <div>
+                                <input type="text" placeholder="h" id="input-b-triangle"
+                                    class="input input-bordered input-success w-[50%] max-w-xs" />
+                                <span>cm</span>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button id="btn-triangle-calculate"
+                                class="btn btn-primary lg:px-9 mg:px-8 px-12">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="random-card2" class="card w-[full]  bg-stone-400 shadow-xl m-4 lg:m-0">
+                    <div class="px-10 pt-10 h-[96%]">
+                        <img src="./images/rectangle.png" alt="Shoes" class="rounded-xl" />
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 id="title-rectangle" class="card-title">Rectangle</h2>
+                        <p>Area (A) = w x l</p>
+                        <div class="flex my-3 gap-x-2">
+                            <div>
+                                <input type="text" placeholder="w" id="input-a-rectangle"
+                                    class="input input-bordered input-success w-[50%] max-w-xs" />
+                                <span>cm</span>
+
+                            </div>
+                            <div>
+                                <input type="text" placeholder="l" id="input-b-rectangle"
+                                    class="input input-bordered input-success w-[50%] max-w-xs" />
+                                <span>cm</span>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button id="btn-rectangle-calculate"
+                                class="btn btn-primary lg: px-9 mg:px-8 px-12 ">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="random-card3" class="card w-[full]  bg-stone-400 shadow-xl m-4 lg:m-0">
+                    <div class="px-10 pt-10 h-[96%]">
+                        <img src="./images/parallelogram.png" alt="Shoes" class="rounded-xl" />
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 id="title-parallelogram" class="card-title">Parallelogram</h2>
+                        <p>Area (A) = b x h</p>
+                        <div class="flex my-3 gap-x-2">
+                            <div>
+                                <input type="text" placeholder="10" id="input-a-parallelogram"
+                                    class="input input-bordered input-success w-[50%] max-w-xs" />
+                                <span>cm</span>
+
+                            </div>
+                            <div>
+                                <input type="text" placeholder="12" id="input-b-parallelogram"
+                                    class="input input-bordered input-success w-[50%] max-w-xs" />
+                                <span>cm</span>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button id="btn-parallelogram-calculate" class="btn btn-primary lg: px-9 mg:px-8 px-12 ">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="random-card4" class="card w-[full]  bg-stone-400 shadow-xl m-4 lg:m-0">
+                    <div class="px-10 pt-10 h-[96%]">
+                        <img src="./images/rhombus.png" alt="Shoes" class="rounded-xl" />
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 id="title-rhombus"  class="card-title">Rhombus</h2>
+                        <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub> </p>
+                        <div class="flex my-3 gap-x-2">
+                            <div>
+                                <input type="text" placeholder="16" id="input-a-rhombus"
+                                    class="input input-bordered input-success w-[50%] max-w-xs" />
+                                <span>cm</span>
+
+                            </div>
+                            <div>
+                                <input type="text" placeholder="8" id="input-b-rhombus"
+                                    class="input input-bordered input-success w-[50%] max-w-xs" />
+                                <span>cm</span>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button id="btn-rhombus-calculate" class="btn btn-primary lg: px-9 mg:px-8 px-12 ">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="random-card5" class="card w-[full]  bg-stone-400 shadow-xl m-4 lg:m-0">
+                    <div class="px-10 pt-10 h-[96%]">
+                        <img src="./images/pentagon.png" alt="Shoes" class="rounded-xl" />
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 id="title-pentagon" class="card-title">Pentagon</h2>
+                        <p>Area (A) = 0.5 x p x b</p>
+                        <div class="flex my-3 gap-x-2">
+                            <div>
+                                <input type="text" placeholder="6" id="input-a-pentagon"
+                                    class="input input-bordered input-success w-[50%] max-w-xs" />
+                                <span>cm</span>
+
+                            </div>
+                            <div>
+                                <input type="text" placeholder="10" id="input-b-pentagon"
+                                    class="input input-bordered input-success w-[50%] max-w-xs" />
+                                <span>cm</span>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button id="btn-pentagon-calculate" class="btn btn-primary lg: px-9 mg:px-8 px-12 ">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="random-card6" class="card w-[full]  bg-stone-400 shadow-xl m-4 lg:m-0">
+                    <div class="px-10 pt-10 h-[96%]">
+                        <img src="./images/ellipse.png" alt="Shoes" class="rounded-xl" />
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 id="title-ellipse" class="card-title">Ellipse</h2>
+                        <p>Area (A) = <span>&#960</span>ab</p>
+                        <div class="flex my-3 gap-x-2">
+                            <div>
+                                <input type="text" placeholder="10" id="input-a-ellipse"
+                                    class="input input-bordered input-success w-[50%] max-w-xs" />
+                                <span>cm</span>
+
+                            </div>
+                            <div>
+                                <input type="text" placeholder="4" id="input-b-ellipse"
+                                    class="input input-bordered input-success w-[50%] max-w-xs" />
+                                <span>cm</span>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button id="btn-ellipse-calculate" class="btn btn-primary lg: px-9 mg:px-8 px-12 ">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-end---------------------------------- -->
+            </main>
+        </section>
+        <section class="w-[100%] lg:w-[20%] my-8  lg:ml-6 text-center">
+            <h4 class="font-semibold underline text-xl text-xl text-center lg:pl-6">Area Calculation</h4>
+            <div id="" class=" mx-auto  font-semibold mx-auto lg:pl-3 my-3">
+                <table class="text-center w-full">
+                    <th>S L</th>
+                    <th>Name</th>
+                    <th>Area</th>
+                    <th>Convert</th>
+                    <tbody id="list-container">
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/hover-random-color.js"></script>
+</body>
+
+
+</html>
